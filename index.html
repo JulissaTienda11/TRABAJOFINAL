@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rescate de la Princesa Elara</title>
+</head>
+<body>
+    <h1>El Rescate de la Princesa Elara</h1>
+    <p>Había una vez en un reino lejano, una hermosa princesa llamada Elara, cuya gracia y bondad eran conocidas en todo el reino. Pero, como en muchos cuentos, la felicidad de Elara se vio amenazada por la oscuridad que acechaba en los rincones más sombríos del reino...</p>
+    <p>Una noche, mientras el reino dormía bajo el resplandor de la luna, una malvada hechicera llamada Morgana, envidiosa del amor y la belleza de la princesa, irrumpió en el castillo con sus secuaces. Con sus artes oscuras, Morgana logró engañar a los guardias y capturar a Elara, con un siniestro artefacto llamado el Amuleto del Olvido...</p>
+    <p>Los días se convirtieron en noches y las noches en días, mientras Elara languidecía en cautiverio, rodeada por las sombras de la maldad de Morgana. Sin embargo, la princesa nunca perdió la esperanza ni la valentía, y en secreto, comenzó a idear un plan para escapar de su prisión y regresar al reino que tanto amaba...</p>
+    <p>Mientras tanto, en el reino, el rey y la reina, desesperados por el paradero de su hija, convocaron a los más valientes y astutos caballeros para rescatar a la princesa. Entre ellos se encontraba el joven y valeroso caballero, Sir Gareth, cuyo corazón latía con la promesa de la aventura y el deseo de salvar a la princesa...</p>
+    <p>Con la determinación ardiente en su pecho, Sir Gareth partió en busca de la malvada Morgana y su fortaleza en las montañas...</p>
+    <p><a href="#decision1">Elige una acción para Sir Gareth</a></p>
+
+    <!-- Decisiones -->
+    <div id="decision1">
+        <h2>¿Qué debería hacer Sir Gareth?</h2>
+        <button onclick="mostrarResultado('resultado1')">Atacar directamente la fortaleza de Morgana.</button>
+        <button onclick="mostrarResultado('resultado2')">Buscar aliados antes de enfrentarse a Morgana.</button>
+    </div>
+    <!-- Resultados -->
+    <div id="resultado1" style="display: none;">
+        <h3>Con valentía y determinación, Sir Gareth se enfrenta directamente a Morgana y rescata a la princesa Elara. Juntos logran regresar triunfantes al reino, donde son recibidos con alefria y celebración.</h3>
+        <h1>¡Fin!</h1>
+        <p>¡Felicitaciones has completado la historia del rescate de la princesa Elara!</p>
+        
+            <h2>Fin de la Historia</h2>
+            <p>¡Gracias por jugar! Esperamos que hayas disfrutado de "El Rescate de la Princesa Elara".</p>
+    </div>
+    
+    <div id="resultado2">
+        <h2>Sir Gareth busca aliados antes de enfrentarse a Morgana</h2>
+        <p>Con la ayuda de valientes guerreros y sabios magos, Sir Gareth planea cuidadosamente su ataque a la fortaleza de Morgana. Juntos, logran derrotar a los secuaces de Morgana y liberar a la princesa Elara. El reino celebra su valentía y el amor prevalece sobre la oscuridad.</p>
+        
+        <p><a href="#final">Siguiente</a></p>
+    </div>
+
+
+        <div id="resultado2" style="display: none;">
+            <h2>Sir Gareth investiga mas sobre los planes de Morgana.</h2>
+        <p>Después de obtener la información valiosa, Sir Gareth descubre un punto débil en los planes de Morgana. Utilizando esta información organiza un plan astuto para rescatar a la princesa Elara sin ser detectado por las fuerzas de Morgana.</p>
+        <h4>Elige una opción para continuar la historia...</h4>
+        <div id="decision1">
+            <button onclick="mostrarResultado('resultado1')">Regresar al reino con la princesa Elara.</button>
+            <button onclick="mostrarResultado('resultado2')">Investigar sobre los planes de Morgana.</button>
+        </div>
+        <button onclick="mostrarSiguiente('decision3')">Elige una acción para continuar la historia</button>
+    </div>
+
+    <div id="resultado4" style="display: none;">
+        <h2>Sir Gareth investiga más sobre los planes de Morgana</h2>
+        <p>Después de obtener información valiosa, Sir Gareth descubre un punto débil en los planes de Morgana. Utilizando esta información, organiza un plan astuto para rescatar a la princesa Elara sin ser detectado por las fuerzas de Morgana.</p>
+    
+      
+    <!-- Nueva Decisión 2 -->
+    <div id="decision3" style="display: none;">
+        <h2>¿Qué debería hacer Sir Gareth ahora?</h2>
+        <button onclick="mostrarResultado('resultado5')">Regresar al reino con la princesa Elara.</button>
+        <button onclick="mostrarResultado('resultado6')">Permanecer en la fortaleza para desmantelar el poder de Morgana.</button>
+    </div>
+
+    <!-- Nuevos Resultados 2 -->
+    <div id="resultado5" style="display: none;">
+        <h2>Sir Gareth regresa al reino con la princesa Elara</h2>
+        <p>El reino celebra el regreso de la princesa Elara y la derrota de Morgana. Sir Gareth y Elara son honrados como héroes, y la paz y la prosperidad vuelven a reinar en el reino.</p>
+        <button onclick="mostrarSiguiente('final')">Siguiente</button>
+    </div>
+
+    <div id="resultado6" style="display: none;">
+        <h2>Sir Gareth permanece en la fortaleza para desmantelar el poder de Morgana</h2>
+        <p>Con valentía y estrategia, Sir Gareth enfrenta los desafíos restantes en la fortaleza de Morgana, asegurándose de que el mal nunca vuelva a amenazar el reino. La paz finalmente se restaura y Sir Gareth regresa como un verdadero héroe.</p>
+        <button onclick="mostrarSiguiente('final')">Siguiente</button>
+    </div>
+
+    <div id="final" style="display: none;">
+        <h2>Fin de la Historia</h2>
+        <p>¡Gracias por jugar! Esperamos que hayas disfrutado de "El Rescate de la Princesa Elara".</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
